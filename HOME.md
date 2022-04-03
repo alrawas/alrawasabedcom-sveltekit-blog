@@ -2,7 +2,7 @@
 Full Stack Web Developer, Technologist, Mentor.
 
 ### Professionally
-Freelance software/web developer, I help businesses through technology, by building internal tools, systems, websites, and SEO.
+Freelance software and web developer, I help businesses with technology, by building internal tools, systems, websites, and SEO.
 
 I am also a business owner myself*, meaning that I am aware and I work with a business value driven mentality.
 
