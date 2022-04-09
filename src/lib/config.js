@@ -2,7 +2,7 @@ export const siteTitle = 'AlRawasAbed'
 export const siteDescription = 'AlRawasAbed - FullStack Web Dev and Mentor'
 export const siteURL = 'alrawasabed.com'
 export const siteLink = 'https://alrawasabed.com'
-export const siteAuthor = 'AlrawasAbed'
+export const siteAuthor = 'AlRawasAbed'
 
 // Controls how many posts are shown per page on the main blog index pages
 export const postsPerPage = 10

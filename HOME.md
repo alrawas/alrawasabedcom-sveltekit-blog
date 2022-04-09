@@ -2,11 +2,12 @@
 Full Stack Web Developer, Technologist, Mentor.
 
 ### Professionally
-Freelance software and web developer, I help businesses with technology, by building internal tools, systems, websites, and SEO.
+Freelance software engineer and web developer, I help businesses with technology, by building internal tools, systems, websites, and SEO.
 
 I am also a business owner myself*, meaning that I am aware and I work with a business value driven mentality.
 
 *check [animestation.megastores.online](https://animestation.megastores.online)
+
 
 ### Previously
 - Backend Engineer at Dubai Technology Partners.
