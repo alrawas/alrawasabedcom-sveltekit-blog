@@ -1,22 +1,22 @@
 ---
-title: "How to post your first tweet programmatically using tweepy"
-date: "2022-04-08"
-updated: "2022-04-08"
+title: "How To Post My First Tweet Programmatically Using Tweepy"
+date: "2022-04-10"
+updated: "2022-04-10"
 categories: 
   - "Twitter"
 coverImage: "/images/How-to-post-my-first-tweet-programmatically-using-tweepy.jpg"
 coverWidth: 3
 coverHeight: 2
-excerpt: This post demonstrates how to start tweeting programmatically in python using tweepy
+excerpt: This post demonstrates how to start tweeting programmatically in python using Tweepy Python library.
 ---
 
 <script>
   import Callout from '$lib/components/Callout.svelte';
 </script>
 ## Introduction
-This blog post shows how to use tweepy to post your first tweet programmatically.
+This blog post shows how to use [Tweepy](https://www.Tweepy.org/) to post your first tweet programmatically.
 
-Covered in this blog post: How to create a Twitter App. How to collect the relevant credentials needed by tweepy, from your Twitter Developer Dashboard. How to use them with tweepy, with the code snippet available.
+Covered in this blog post: How to create a Twitter App. How to collect the relevant credentials needed by Tweepy from your Twitter Developer Dashboard. How to use them with Tweepy to post your first tweet with Python code. Code snippet available.
 
 Note that you should use this snippet only for testing and never upload your credentials publicly online.
 
@@ -28,7 +28,7 @@ Note that you should use this snippet only for testing and never upload your cre
 We will be using the [Twitter API](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api). Feel free to read it. However, this blog post covers what is needed for the task straight to the point.
 
 ## Credentials Needed ( for our case )
-In order to tweet programmatically using tweepy, we need to provide it with 4 credentials. These credentials are used to tell the Twitter API:
+In order to tweet programmatically using Tweepy, we need to provide it with 4 credentials. These credentials are used to tell the Twitter API:
 
 1. Which app we are using: **API Key**
 2. Proof that we own the app: **API Key Secret**
@@ -60,13 +60,13 @@ An Access Token and Secret are user-specific credentials used to authenticate OA
     - Copy the <span style="color:var(--accent)">**Access Token**</span> and <span style="color:var(--accent)">**Secret**</span> somewhere safe
     - We can ignore the **Bearer** for this tutorial
 
-That's it! Now we have the four credentials we need to provide tweepy with.
+That's it! Now we have the four credentials we need to provide Tweepy with.
 
 ## Python Code Snippet
 
 ```python
 import random
-import tweepy
+import Tweepy
 
 consumer_key = "APP_KEY"
 consumer_secret = "APP_SECRET"
@@ -74,9 +74,9 @@ access_token = "ACCESS_TOKEN"
 access_token_secret = "ACCESS_TOKEN_SECRET"
     
 print("Authenticate")
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth = Tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
-api = tweepy.API(auth)
+api = Tweepy.API(auth)
 
 tweet = "Refrigerator Test Hello World!"
 print(f"Post tweet: {tweet}")

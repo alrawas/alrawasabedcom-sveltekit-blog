@@ -17,8 +17,6 @@
 
 <script>
 	import '$lib/assets/scss/global.scss';
-	import { stores } from '@sapper/app';
-  import GoogleAnalytics from '../components/GoogleAnalytics.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { currentPage, isMenuOpen } from '$lib/assets/js/store';
@@ -26,7 +24,6 @@
 	import { prefetch } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	import Callout from '$lib/components/Callout.svelte';
 
 	const transitionIn = { delay: 150, duration: 150 };
 	const transitionOut = { duration: 100 };
@@ -39,6 +36,14 @@
 	 **/
 	$: currentPage.set(path);
 
+	// For gtag updates when the client changes pages
+	$: {
+    if (typeof gtag !== "undefined"){
+      gtag("config", "G-M6S4SP5GVN", {
+        page_path: $currentPage.path
+      });
+    }
+  }
 	/**
 	 * This pre-fetches all top-level routes on the site in the background for faster loading.
 	 * https://kit.svelte.dev/docs#modules-$app-navigation
@@ -55,7 +60,6 @@
   The below markup is used on every page in the site. The <slot> is where the page's
   actual contents will show up.
 -->
-<GoogleAnalytics />
 <div class="layout" class:open={$isMenuOpen}>
 	<Header />
 	{#key path}
