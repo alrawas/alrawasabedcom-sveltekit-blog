@@ -17,6 +17,8 @@
 
 <script>
 	import '$lib/assets/scss/global.scss';
+	import { stores } from '@sapper/app';
+  import GoogleAnalytics from '../components/GoogleAnalytics.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { currentPage, isMenuOpen } from '$lib/assets/js/store';
@@ -53,6 +55,7 @@
   The below markup is used on every page in the site. The <slot> is where the page's
   actual contents will show up.
 -->
+<GoogleAnalytics />
 <div class="layout" class:open={$isMenuOpen}>
 	<Header />
 	{#key path}

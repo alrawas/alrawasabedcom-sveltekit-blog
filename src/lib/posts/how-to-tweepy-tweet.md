@@ -5,8 +5,8 @@ updated: "2022-04-08"
 categories: 
   - "Twitter"
 coverImage: "/images/How-to-post-my-first-tweet-programmatically-using-tweepy.jpg"
-coverWidth: 16
-coverHeight: 9
+coverWidth: 3
+coverHeight: 2
 excerpt: This post demonstrates how to start tweeting programmatically in python using tweepy
 ---
 
@@ -25,7 +25,7 @@ Note that you should use this snippet only for testing and never upload your cre
 - You should have **Python** and **Pip** installed locally.
 
 ## Twitter API
-We will be using [Twitter API](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api). Feel free to read it. However, this blog post covers what is needed for tha task straight to the point.
+We will be using the [Twitter API](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api). Feel free to read it. However, this blog post covers what is needed for the task straight to the point.
 
 ## Credentials Needed ( for our case )
 In order to tweet programmatically using tweepy, we need to provide it with 4 credentials. These credentials are used to tell the Twitter API:
@@ -62,7 +62,7 @@ An Access Token and Secret are user-specific credentials used to authenticate OA
 
 That's it! Now we have the four credentials we need to provide tweepy with.
 
-## Code
+## Python Code Snippet
 
 ```python
 import random
@@ -84,3 +84,5 @@ api.update_status(tweet)
 ```
 
 Execute this Python code, and voila! you just tweeted "Refrigerator Test Hello World!" to the Twitter timeline!
+
+Click on that Tweet and Observe your App's name being displayed instead of 'Twitter Web App', 'Twitter for iPhone' or 'Twitter for Android'.
