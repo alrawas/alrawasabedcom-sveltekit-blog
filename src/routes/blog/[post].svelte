@@ -32,6 +32,7 @@
 <svelte:head>
   <!-- Be sure to add your image files and un-comment the lines below -->
   <title>{title}</title>
+  <meta name="twitter:card" content="summary_large_image">
   <meta data-key="description" name="description" content="{excerpt}">
   <meta property="og:type" content="article" />
   <meta property="og:title" content={title} />
