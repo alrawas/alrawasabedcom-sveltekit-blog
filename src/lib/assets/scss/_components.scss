@@ -8,6 +8,13 @@
   border-radius: 0.125rem;
 }
 
+li {
+  .callout {
+    width: calc(100% + 5rem);
+    margin: 2rem 0 2rem -4rem;
+  }
+}
+
 .pagination {
   margin: 0 0 1rem;
 
