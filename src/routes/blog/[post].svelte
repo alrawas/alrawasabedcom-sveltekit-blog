@@ -83,9 +83,9 @@
 	</article>
 	<script
 		src="https://utteranc.es/client.js"
-		repo="https://github.com/alrawas/alrawasabedcom-sveltekit-blog"
+		repo="alrawas/alrawasabedcom-sveltekit-blog"
 		issue-term="pathname"
-		theme="github-dark"
+		theme="github-light"
 		crossorigin="anonymous"
 		async>
 	</script>
