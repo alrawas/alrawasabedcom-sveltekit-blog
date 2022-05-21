@@ -15,7 +15,7 @@ This is a quick tutorial on how to achieve the following effect using TailwindCS
 
 As a bonus, add a background clipping too!
 
-<img href="/" alt="h" src="/images/tailwind-section-bg-clipped.png" />
+<img href="/" alt="h" src="/images/tailwind-section-bg-clipped.jpg" />
 
 ## Minimal Working Snippet
 To achieve the effect of a background image, put the `background-image` css property inside the style attribute. The `url('')` works for remotely hosted images as well as for local images.
