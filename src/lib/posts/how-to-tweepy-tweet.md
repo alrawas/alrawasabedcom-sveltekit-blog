@@ -1,20 +1,20 @@
 ---
-title: "How To Post My First Tweet Programmatically Using Tweepy"
+title: "How To Post My First Tweet Using Tweepy"
 date: "2022-04-10"
 updated: "2022-04-10"
 categories: 
   - "Twitter"
-coverImage: "/images/How-to-post-my-first-tweet-programmatically-using-tweepy.jpg"
+coverImage: "/images/how-to-post-my-first-tweet-using-tweepy.jpg"
 coverWidth: 3
 coverHeight: 2
-excerpt: This post demonstrates how to start tweeting programmatically in python using Tweepy Python library.
+excerpt: This post demonstrates how to start tweeting in python using Tweepy Python library. The first step towards coding your first twitter bot.
 ---
 
 <script>
   import Callout from '$lib/components/Callout.svelte';
 </script>
 ## Introduction
-This blog post shows how to use [Tweepy](https://www.Tweepy.org/) to post your first tweet programmatically.
+This blog post shows how to use [Tweepy](https://www.Tweepy.org/) to post your first tweet with Python code.
 
 Covered in this blog post: How to create a Twitter App. How to collect the relevant credentials needed by Tweepy from your Twitter Developer Dashboard. How to use them with Tweepy to post your first tweet with Python code. Code snippet available.
 
@@ -62,7 +62,7 @@ An Access Token and Secret are user-specific credentials used to authenticate OA
 
 That's it! Now we have the four credentials we need to provide Tweepy with.
 
-## Python Code Snippet
+## Python Tweepy Example
 
 ```python
 import random
