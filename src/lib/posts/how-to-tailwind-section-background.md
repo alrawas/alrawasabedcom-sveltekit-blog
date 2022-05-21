@@ -13,7 +13,7 @@ excerpt: This post contains a snippet demonstrating how to code a section with a
 ## Final Result
 This is a quick tutorial on how to achieve the following effect using TailwindCSS.
 
-As a bonus, we added background clipping too!
+As a bonus, add a background clipping too!
 
 <img href="/" alt="h" src="/images/tailwind-section-bg-clipped.png" />
 
@@ -60,7 +60,7 @@ Building on top of the previous snippet. I added the clipping code into the styl
 ## TailwindCSS Full Code Snippet
 The clipping leaves whitespace behind it. To have control on that whitespace color, wrap the section with a div having a background color of your choice. `<div class="bg-[#E4E4E4]">` is an example.
 
-Additionally, I added some blend overlay effects to further customize the background. Feel free to use these effects or remove them.
+I added some blend overlay effects to further customize the background. Feel free to use these effects or remove them.
 
 ```html
 <div class="bg-[#E4E4E4]">
