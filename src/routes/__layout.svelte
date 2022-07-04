@@ -38,12 +38,12 @@
 
 	// For gtag updates when the client changes pages
 	$: {
-    if (typeof gtag !== "undefined"){
-      gtag("config", "G-M6S4SP5GVN", {
-        page_path: $currentPage.path
-      });
-    }
-  }
+		if (typeof gtag !== 'undefined') {
+			gtag('config', 'G-M6S4SP5GVN', {
+				page_path: $currentPage.path
+			});
+		}
+	}
 	/**
 	 * This pre-fetches all top-level routes on the site in the background for faster loading.
 	 * https://kit.svelte.dev/docs#modules-$app-navigation
@@ -53,6 +53,20 @@
 	 **/
 	onMount(() => {
 		navItems.forEach((item) => prefetch(item.route));
+
+		// <!--Start of Tawk.to Script-->
+		var Tawk_API = Tawk_API || {},
+			Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement('script'),
+				s0 = document.getElementsByTagName('script')[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/62c2cca6b0d10b6f3e7ab043/1g74eur6h';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+		// <!--End of Tawk.to Script-->
 	});
 </script>
 
